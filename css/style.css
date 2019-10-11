@@ -1,13 +1,13 @@
 * {
   padding: 0;
   margin: 0;
+  grid-gap: 20px;
 }
 
 body {
   font-family: sans-serif;
   padding: 60px 20px 60px 20px;
   box-sizing: border-box;
-
 }
 
 h1, h2 {
@@ -22,6 +22,25 @@ a {
 }
 a:visited {
   color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  font-size: 12pt;
+  padding: 10px;
+  margin-top: 20px;
+  border: 2px solid black;
+  border-radius: 32px;
+  background-color: none;
+  text-decoration: none;
+  display: inline-block;
+}
+.button:hover {
+  color: white;
+  background-color: black;
+  text-decoration: none;
 }
 
 img {
@@ -53,19 +72,111 @@ footer {
   grid-template-columns: 4.5fr .5fr;
 }
 
-.exhibition article {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin-bottom: 20px;
+.logo {
+  text-align: left;
 }
 
-.exhibition_info {
+.logo img {
+  margin-top: 3px;
+  height: 12px;
+}
+
+article {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-bottom: 80px;
+}
+
+.intro {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+}
+
+.intro p {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.exhibition article {
+  margin-top: calc(100vh - 40px);
+}
+
+.exhibition_header {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  z-index: -100;
+  padding: 20px;
+  box-sizing: border-box;
+
+  left: 50%;
+  -webkit-transform:translate(-50%);
+  -moz-transform:translate(-50%);
+  -ms-transform:translate(-50%);
+  -o-transform:translate(-50%);
+  transform:translate(-50%);
+}
+
+.exhibition_header img {
+  position: relative;
+  left: 50%;
+  top: 50%;
+
+  -webkit-transform:translate(-50%, -50%);
+  -moz-transform:translate(-50%, -50%);
+  -ms-transform:translate(-50%, -50%);
+  -o-transform:translate(-50%, -50%);
+  transform:translate(-50%, -50%);
+  max-height: 100%;
 }
 
 .exhibition_info ul {
   list-style: none;
 }
 
-.exhibition_description {
+.exhibition_description, .about_description {
   grid-column: 4 / span 2;
+}
+
+.exhibition_documentation img {
+  width: 100%;
+}
+
+.directors, .sponsors {
+  margin-top: 60px;
+}
+
+input, .mailinglist_button {
+	border: none;
+  background: none;
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.25;
+  padding: 0 0 0 0;
+}
+
+.mailinglist_button {
+	cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  article {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+  }
+  .exhibition_description, .about_description {
+    grid-column: 3 / span 2;
+  }
+}
+
+@media (max-width: 450px) {
+  article {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .exhibition_description, .about_description {
+    grid-column: 1 / span 2;
+  }
 }
