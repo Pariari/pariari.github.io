@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on Pari</title>
-    <link>https://pariari.github.io/programming/</link>
+    <link>https://pariari.org/programming/</link>
     <description>Recent content in Programming on Pari</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 10 Oct 2019 18:27:15 +0200</lastBuildDate>
     
-	<atom:link href="https://pariari.github.io/programming/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://pariari.org/programming/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>10 Degrees Hotter</title>
-      <link>https://pariari.github.io/programming/01-10degreeshotter/</link>
+      <link>https://pariari.org/programming/01-10degreeshotter/</link>
       <pubDate>Tue, 08 Oct 2019 17:12:57 +0000</pubDate>
       
-      <guid>https://pariari.github.io/programming/01-10degreeshotter/</guid>
+      <guid>https://pariari.org/programming/01-10degreeshotter/</guid>
       <description>10 Degrees Hotter was almost the name of this gallery but we couldn’t all agree. Some thought it sounded like a boy band, others thought it was a mouthful. The phrase came out of a way of describing the conditions of being in Western Sydney— on any regular summer day, it can be five to ten degrees hotter in the west compared to out east. This artificial climate is created by the urban heat island effect, where hot air gets trapped in the vast concrete expanse between the mountains and the coast.</description>
     </item>
     
