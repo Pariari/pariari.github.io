@@ -4,6 +4,10 @@
   grid-gap: 20px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: sans-serif;
   padding: 60px 20px 60px 20px;
@@ -88,14 +92,20 @@ article {
 }
 
 .intro {
-  height: 75vh;
+  height: calc(100vh - 50px);
   display: flex;
   align-items: center;
+  cursor: s-resize;
 }
 
 .intro p {
   flex-basis: 100%;
   text-align: center;
+  margin-top: -70px;
+}
+
+#list {
+  padding-top: 60px;
 }
 
 .exhibition article {
