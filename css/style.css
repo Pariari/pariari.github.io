@@ -64,16 +64,30 @@ header, footer {
   display: grid;
 }
 
+header, footer {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
 header {
   top: 0;
   padding: 20px 20px 0 20px;
-  grid-template-columns: 4fr .5fr .5fr;
 }
 
 footer {
   bottom: 0;
   padding: 0 20px 20px 20px;
-  grid-template-columns: 4.5fr .5fr;
+}
+
+header span:first-of-type {
+  grid-column: 1 / span 5;
+}
+footer span:first-of-type{
+  grid-column: 1 / span 7;
 }
 
 .logo {
@@ -92,16 +106,23 @@ article {
 }
 
 .intro {
-  height: calc(100vh - 50px);
+  /* height: calc(100vh - 50px);
   display: flex;
   align-items: center;
-  cursor: s-resize;
+  cursor: s-resize; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 100vw;
+  padding: 60px 20px 60px 20px;
+  box-sizing: border-box;
 }
 
 .intro p {
-  flex-basis: 100%;
+  /* flex-basis: 100%; */
   text-align: center;
-  margin-top: -70px;
+  /* margin-top: -70px; */
 }
 
 #list {
@@ -152,6 +173,10 @@ article {
 
 .exhibition_documentation img {
   width: 100%;
+}
+
+.streetview {
+  height: 200px;
 }
 
 .directors, .sponsors {
