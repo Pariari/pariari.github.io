@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   grid-gap: 20px;
+  box-sizing: border-box;
 }
 
 html {
@@ -12,6 +13,7 @@ body {
   font-family: sans-serif;
   padding: 60px 20px 60px 20px;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 h1, h2 {
@@ -60,15 +62,6 @@ header, footer {
   position: fixed;
   left: 0;
   width: 100%;
-  box-sizing: border-box;
-  display: grid;
-}
-
-header, footer {
-  position: fixed;
-  left: 0;
-  width: 100%;
-  box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
 }
@@ -140,7 +133,6 @@ article {
   top: 0;
   z-index: -100;
   padding: 20px;
-  box-sizing: border-box;
 
   left: 50%;
   -webkit-transform:translate(-50%);
@@ -153,14 +145,10 @@ article {
 .exhibition_header_notfixed {
   height: 80vh;
   width: 100vw;
-  padding: 20px;
-  box-sizing: border-box;
-
-  /* left: 50%; */
-  /* transform:translate(-50%); */
+  padding: 20px 0 20px 20px;
 }
 
-.exhibition_header_notfixed img {
+.exhibition_header img, .exhibition_header_notfixed img {
   position: relative;
   left: 50%;
   top: 50%;
@@ -173,17 +161,16 @@ article {
   max-height: 100%;
 }
 
-.exhibition_header img {
+.summary img {
   position: relative;
   left: 50%;
-  top: 50%;
 
-  -webkit-transform:translate(-50%, -50%);
-  -moz-transform:translate(-50%, -50%);
-  -ms-transform:translate(-50%, -50%);
-  -o-transform:translate(-50%, -50%);
-  transform:translate(-50%, -50%);
-  max-height: 100%;
+  -webkit-transform:translateX(-50%);
+  -moz-transform:translateX(-50%);
+  -ms-transform:translateX(-50%);
+  -o-transform:translateX(-50%);
+  transform:translateX(-50%);
+  max-height: 75vh;
 }
 
 .exhibition_info ul {
@@ -221,7 +208,7 @@ input, .mailinglist_button {
 
 @media (max-width: 800px) {
   article {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
   }
   .exhibition_description, .about_description {
@@ -231,10 +218,13 @@ input, .mailinglist_button {
 
 @media (max-width: 450px) {
   article {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: none;
     grid-template-rows: auto;
   }
+  .exhibition_info {
+    grid-column: 1 / span 1;
+  }
   .exhibition_description, .about_description {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 1;
   }
 }
