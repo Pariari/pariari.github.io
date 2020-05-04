@@ -1,0 +1,39 @@
+backend:
+  name: git-gateway
+  branch: netlify-cms # Branch to update (optional; defaults to master)
+media_folder: static/media
+public_folder: /media
+collections:
+  - name: programming
+    label: Programming
+    folder: content/programming
+    path: '{{slug}}/index'
+    media_folder: ''
+    public_folder: ''
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string'}
+      - { label: 'Publish Date', name: 'date', widget: 'datetime'}
+      - { label: 'Exhibition Opening', name: 'exhibition_opening', widget: 'string'}
+      - { label: 'Exhibition Opening Time', name: 'exhibition_opening_time', widget: 'string'}
+      - { label: 'Exhibition Start', name: 'exhibition_start', widget: 'string'}
+      - { label: 'Exhibition End', name: 'exhibition_end', widget: 'string'}
+      - { label: 'Artists', name: 'artists', widget: 'string'}
+      - { label: 'Curators', name: 'curators', widget: 'string'}
+      - { label: 'Synopsis', name: 'synopsis', widget: 'markdown'}
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: "Cover Image"
+        name: "cover_image"
+        widget: "image"
+        default: ""
+        allow_multiple: false
+      - label: "Documentation"
+        name: "documentation"
+        widget: "image"
+        default: ""
+        allow_multiple: true
+        media_library:
+          config:
+            multiple: true
