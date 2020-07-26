@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pari</title>
@@ -6,7 +6,7 @@
     <description>Recent content on Pari</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Jan 2020 17:12:57 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jul 2020 12:06:48 +0200</lastBuildDate>
     
 	<atom:link href="https://pariari.org/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,6 +18,16 @@
       
       <guid>https://pariari.org/about/</guid>
       <description>Pari is a new artist-run initiative in Parramatta. We are for art that tells stories that need to be told, sheds new light on old thinking, or tackles new ideas altogether. We are for getting you to Parra, or making it so that you don’t have to leave here to come together over new, challenging, boundary-pushing art. We are for bringing art and ideas to Western Sydney audiences, and bringing audiences from elsewhere to experience art in the crane-hogging, uber-developing, beautifully contradictory and diverse place we call Parramatta, in the geographical centre of Sydney’s urban sprawl, in the heart of unceded Darug territory.</description>
+    </item>
+    
+    <item>
+      <title>Companions</title>
+      <link>https://pariari.org/programming/03-companions/</link>
+      <pubDate>Sun, 26 Jul 2020 12:06:48 +0200</pubDate>
+      
+      <guid>https://pariari.org/programming/03-companions/</guid>
+      <description>In Companions, materials are active partners in each practice, and the subsequent works are collaborations: the result of a push and pull between human and non-human companions.
+The artists in Companions choose to work with materials and processes that are not stable or fixed. Things that respond, often unpredictably, to light, air and time. Some of the materials are living, and continue to grow and morph. Others will dry, decay or eventually die.</description>
     </item>
     
     <item>

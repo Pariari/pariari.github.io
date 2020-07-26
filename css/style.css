@@ -102,11 +102,11 @@ main {
 .exhibition__info div:first-of-type { grid-column: 3 / span 2; }
 .exhibition__info div:last-of-type { grid-column: 5 / span 2; }
 .exhibition__description div { grid-column: 3 / span 4; }
-.exhibition__description p { font: var(--primary) }
+.exhibition__description p, .exhibition__info--artists p { font: var(--primary) }
 
 .button {
   display: inline-block;
-  margin: 10px 0 0 calc(50% + 10px);
+  margin: 20px 0 0 calc(50% + 10px);
   font: var(--secondary);
   text-decoration: none;
   padding: 10px;
@@ -117,6 +117,11 @@ main {
   color: white;
   background-color: black;
   text-decoration: none;
+}
+
+.lupa { margin: 20px 0 0 calc(50% + 10px); }
+.lupa p {
+  font: var(--secondary);
 }
 
 .about {
@@ -169,8 +174,9 @@ input, .mailinglist_button {
 .sponsors {
   font: var(--secondary);
   text-align: center;
-  padding-top:20px;
+  margin-top:60px;
 }
+.sponsors img { max-width: 500px; margin-top: 10px }
 
 /*
 
