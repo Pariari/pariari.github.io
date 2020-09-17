@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Events on Pari</title>
+    <link>https://pariari.org/events/</link>
+    <description>Recent content in Events on Pari</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Oct 2019 18:27:15 +0200</lastBuildDate>
+    
+	<atom:link href="https://pariari.org/events/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>P2P</title>
+      <link>https://pariari.org/p2p/</link>
+      <pubDate>Sun, 26 Jul 2020 12:06:48 +0200</pubDate>
+      
+      <guid>https://pariari.org/p2p/</guid>
+      <description>P2P is a program of virtual sharing between Pari and artist-run collectives and spaces around the world. Through a series of online workshops with friends near and far, we hope to collectively engage with ideas and models for collaboration and criticality within the arts.
+For this first iteration, Pari has teamed up with Gudskul and The White Pube to host the following workshops online:
+Gudskul workshop: Speculative Collective
+🕙 Tues 20 Oct 5-8pm (AEST)</description>
+    </item>
+    
+  </channel>
+</rss>
