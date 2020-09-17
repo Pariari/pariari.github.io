@@ -133,6 +133,12 @@ main {
   padding: 10px;
   font: var(--primary)
 }
+.button--blank:hover {
+  color:black;
+  background-color: white;
+}
+
+
 hr {
   border:0;
   border-top: 0.5px solid black;
