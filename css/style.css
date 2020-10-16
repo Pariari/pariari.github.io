@@ -128,13 +128,17 @@ main {
   background-color: black;
   text-decoration: none;
 }
-.button--p2p {
+.button--active, .button--inactive {
   margin: 20px 0 40px 0;
   padding: 10px;
-  font: var(--primary)
+  font: var(--primary);
 }
-.button--blank:hover {
-  color:black;
+.button--inactive {
+  color: lightgray;
+  border: 2px solid lightgray;
+}
+.button--inactive:hover {
+  color: lightgrey;
   background-color: white;
 }
 
