@@ -28,6 +28,8 @@ h2 { font: var(--secondary); text-transform:uppercase; }
 p { font: var(--secondary); }
 p:not(:last-child) { padding-bottom: 20px; }
 
+strong {font-weight: bold;}
+
 img { width: 100%; }
 
 header, footer {
@@ -40,7 +42,7 @@ header, footer {
 }
 header { top: 20px; }
 footer { bottom: 20px; }
-header span { grid-column: 1 / span 6; }
+header span { grid-column: 1 / span 5; }
 footer h2:first-of-type{ grid-column: 1 / span 7; }
 .logo img { width: auto; height: 12px; }
 
@@ -114,6 +116,15 @@ main {
 /* .exhibition__description div { grid-column: 3 / span 4; } */
 .exhibition__description p, .exhibition__info--artists p { font: var(--primary) }
 
+.menu--special {
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 32px;
+  padding: 10px;
+  margin-top: -12px;
+  text-decoration: none;
+}
+
 .button {
   display: inline-block;
   margin: 20px 0 0 calc(50% + 10px);
@@ -123,7 +134,7 @@ main {
   border: 2px solid black;
   border-radius: 32px;
 }
-.button:hover {
+.button:hover, .menu--special:hover {
   color: white;
   background-color: black;
   text-decoration: none;
