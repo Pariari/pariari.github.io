@@ -166,6 +166,11 @@ hr {
   color: white;
   border-radius: 20px;
 }
+.callout {
+  background: grey;
+  color: white;
+  border-radius: 20px;
+}
 
 .lupa { margin: 20px 0 0 calc(50% + 10px); }
 .lupa p {
