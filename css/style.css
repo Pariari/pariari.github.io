@@ -231,6 +231,7 @@ input, .mailinglist_button {
 }
 .sponsors img { max-width: 500px; margin-top: 10px }
 
+#moreGS, #moreWP { display:none }
 
 @media (max-width: 800px) {
   .about article {
