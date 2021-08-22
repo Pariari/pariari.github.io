@@ -233,6 +233,34 @@ input, .mailinglist_button {
 
 #moreGS, #moreWP { display:none }
 
+.ngariung h1 {
+  font-weight: 800;
+  margin: 24px 0;
+}
+.ngariung h3 {
+  font: var(--primary);
+  text-decoration: underline;
+}
+.ngariung a:not(.button) {
+  text-decoration: underline;
+}
+.ngariung a:hover:not(.button) {
+  color: blue;
+}
+.ngariung .button {
+  margin: 12px 0;
+}
+.ngariung ul {
+  margin-bottom: 20px;
+}
+.ngariung hr {
+  margin: 24px 0;
+}
+.ngariung summary:hover {
+  cursor: pointer;
+  opacity: .6;
+}
+
 @media (max-width: 800px) {
   .about article {
     grid-column: 1/-1!important;
